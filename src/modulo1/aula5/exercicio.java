@@ -1,4 +1,4 @@
-package modulo1.aula5.a5_2_while;
+package modulo1.aula5;
 // Crie um programa em linguagem Java que atenda aos seguintes requisitos:
 //_ O programa deve realizar o cadastro de clientes.
 //_ O programa deve ter um cabeçalho com o nome do programa.
