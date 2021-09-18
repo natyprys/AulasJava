@@ -7,7 +7,6 @@ package modulo1.aula6;
 //_ O cadastro de dev deve solicitar o nome, sobrenome, senioridade e idade.
 //_ O nome e sobrenome devem conter no mínimo 3 caracteres.
 //_ A idade deve ser maior que 0.
-
 //_ O cadastro de linguagens deve solicitar o nome, descrição e a aplicação.
 //_ O nome deve conter no mínimo 3 caracteres.
 //- A aplicação deve ser apenas Frontend, Backend ou Mobile.
@@ -44,7 +43,7 @@ public class a6_1_Atividade {
                 if (nomeDev.length() < 3) {
                     System.out.println("Valor inválido. O nome deve ter no mínimo 3 caracteres. Digite novamente");
                 }
-            } while(nomeDev.length() < 3);
+            } while (nomeDev.length() < 3);
 
 
             //sobrenome- no mínimo 3 caracteres
@@ -55,7 +54,7 @@ public class a6_1_Atividade {
                 if (sobrenome.length() < 3) {
                     System.out.println("Valor inválido. O sobrenome deve ter no mínimo 3 caracteres. Digite novamente");
                 }
-            } while(sobrenome.length() < 3);
+            } while (sobrenome.length() < 3);
 
 
             //senioridade - Junior , Pleno , Sênior , Master
@@ -81,7 +80,7 @@ public class a6_1_Atividade {
                     default:
                         System.out.println("Tipo de aplicação inválida. Digite novamente");
                 }
-            } while(tipoSenioridade < 1 || tipoSenioridade > 4);
+            } while (tipoSenioridade < 1 || tipoSenioridade > 4);
 
             //idade - maior que 0
             do {
