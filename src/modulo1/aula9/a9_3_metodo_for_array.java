@@ -3,7 +3,7 @@ package modulo1.aula9;
 import java.util.Scanner;
 import java.util.Arrays;
 
-public class a9_3_metodo_for {
+public class a9_3_metodo_for_array {
 
     static Scanner sc = new Scanner(System.in);
 
