@@ -5,4 +5,8 @@ public class Produto {
         double valor;
         String descricao;
 
+        void imprimir (){
+                System.out.printf("Nome: %s, descrição: %s, valor: %f", nome,descricao,valor);
+        }
+
 }
