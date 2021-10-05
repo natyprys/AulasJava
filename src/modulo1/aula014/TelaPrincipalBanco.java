@@ -11,7 +11,7 @@ public class TelaPrincipalBanco {
 
         cc.setNumero(24342342);
         int h = cc.getNumero();
-        System.out.println("O numero é: " + h);
+        System.out.println("O número é: " + h);
 
         cc.setCodigo (18);
         int i = cc.getCodigo();
