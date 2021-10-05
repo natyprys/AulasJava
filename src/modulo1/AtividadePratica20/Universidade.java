@@ -9,7 +9,7 @@ public class Universidade {
         f.setSobrenome("Antunes");
         f.setMatricula("789907222");
         f.setSalario(3000.00);
-        f.setDepartamento("Física");
+        f.setDepartamento("FGA");
 
         System.out.println("\n--------------Funcionário -------------------------\n");
         System.out.println("\tNome: " + f.getNome() +"\n\tSobrenome: " + f.getSobrenome() + "\n\tMatricula: " + f.getMatricula() + "\n\tSalario: " + f.getSalario() +"\n\tDepartamento: " + f.getDepartamento());
@@ -20,11 +20,12 @@ public class Universidade {
         c.setSobrenome("Visco");
         c.setMatricula("00021342");
         c.setSalario(9000.00);
+        c.setDepartamento("Darcy");
         c.setCursoCoordenado("Engenharias");
         c.setBonus(1000.00);
 
         System.out.println("\n--------------Coordenador -------------------------\n");
-        System.out.println("\tNome: " + c.getNome() +"\n\tSobrenome: " + c.getSobrenome() + "\n\tMatricula: " + c.getMatricula() + "\n\tSalario: " + c.getSalario() +"\n\tCoordenador do departamento: " + c.getCursoCoordenado() +"\n\tBonus: " + c.getBonus());
+        System.out.println("\tNome: " + c.getNome() +"\n\tSobrenome: " + c.getSobrenome() + "\n\tMatricula: " + c.getMatricula() + "\n\tSalario: " + c.getSalario() +"\n\tDepartamento: " + c.getDepartamento() +"\n\tCoordenador do departamento: " + c.getCursoCoordenado() +"\n\tBonus: " + c.getBonus());
 
 
         Aluno a = new Aluno();
