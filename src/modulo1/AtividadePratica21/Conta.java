@@ -2,7 +2,7 @@ package modulo1.AtividadePratica21;
 
 public class Conta {
     private double saldo;
-    private double codigoCliente;
+    private String codigoCliente;
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
@@ -12,15 +12,16 @@ public class Conta {
     }
 
 
-    public void setCodigoCliente(double codigoCliente) {
+    public void setCodigoCliente(String codigoCliente) {
         this.codigoCliente = codigoCliente;
     }
-    public double getCodigoCliente() {
+    public String getCodigoCliente() {
         return codigoCliente;
     }
 
     public void transferencia (double valorTransferencia){
-        saldo -= valorTransferencia;
+        saldo = saldo - valorTransferencia;
         System.out.printf("\n\tValor transferindo: %.2f", valorTransferencia);
     }
+
 }
