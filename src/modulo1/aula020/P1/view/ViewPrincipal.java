@@ -1,4 +1,7 @@
-package modulo1.aula020.view;
+package modulo1.aula020.P1.view;
+
+import modulo1.aula020.P1.view.CategoriaView;
+import modulo1.aula020.P1.view.ProdutoView;
 
 import java.util.Scanner;
 

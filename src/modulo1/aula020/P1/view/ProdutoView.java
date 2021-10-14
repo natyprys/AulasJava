@@ -1,7 +1,7 @@
-package modulo1.aula020.view;
+package modulo1.aula020.P1.view;
 
-import modulo1.aula020.controller.ProdutoController;
-import modulo1.aula020.model.Produto;
+import modulo1.aula020.P1.controller.ProdutoController;
+import modulo1.aula020.P1.model.Produto;
 
 import java.util.ArrayList;
 

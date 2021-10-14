@@ -1,4 +1,4 @@
-package modulo1.aula020.model;
+package modulo1.aula020.P1.model;
 
 public class Produto extends BaseModel{
     private String nome;
