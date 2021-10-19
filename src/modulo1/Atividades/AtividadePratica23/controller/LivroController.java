@@ -1,6 +1,6 @@
-package modulo1.AtividadePratica23.controller;
+package modulo1.Atividades.AtividadePratica23.controller;
 
-import modulo1.AtividadePratica23.model.Livro;
+import modulo1.Atividades.AtividadePratica23.model.Livro;
 
 import java.util.ArrayList;
 

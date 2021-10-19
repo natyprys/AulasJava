@@ -1,4 +1,4 @@
-package modulo1.AtividadePratica20;
+package modulo1.Atividades.AtividadePratica20;
 
 public class Aluno extends Pessoa{
    private String curso;

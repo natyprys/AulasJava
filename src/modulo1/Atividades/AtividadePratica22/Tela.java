@@ -1,6 +1,4 @@
-package modulo1.AtividadePratica22;
-
-import modulo1.AtividadePratica20.Pessoa;
+package modulo1.Atividades.AtividadePratica22;
 
 public class Tela {
     public static void main(String[] args) {

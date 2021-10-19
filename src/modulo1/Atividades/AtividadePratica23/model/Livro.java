@@ -1,4 +1,4 @@
-package modulo1.AtividadePratica23.model;
+package modulo1.Atividades.AtividadePratica23.model;
 
 public class Livro {
     private String nome;

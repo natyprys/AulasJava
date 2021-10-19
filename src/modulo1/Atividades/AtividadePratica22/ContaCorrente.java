@@ -1,4 +1,4 @@
-package modulo1.AtividadePratica22;
+package modulo1.Atividades.AtividadePratica22;
 
 public class ContaCorrente {
     private double saldo;
