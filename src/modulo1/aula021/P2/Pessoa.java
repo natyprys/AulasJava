@@ -1,4 +1,4 @@
-package modulo1.aula21.P2;
+package modulo1.aula021.P2;
 
 public class Pessoa {
         public String nome;

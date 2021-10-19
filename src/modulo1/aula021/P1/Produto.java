@@ -1,4 +1,4 @@
-package modulo1.aula21.P1;
+package modulo1.aula021.P1;
 
 public class Produto {
     public String nome;
