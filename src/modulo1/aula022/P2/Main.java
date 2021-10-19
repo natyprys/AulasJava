@@ -1,4 +1,4 @@
-package modulo1.aula021.P2;
+package modulo1.aula022.P2;
 
 public class Main {
     public static void main(String[] args) {

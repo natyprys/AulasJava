@@ -1,4 +1,4 @@
-package modulo1.aula021.P1;
+package modulo1.aula022.P1;
 
 public class Eletrodomestico extends Produto {
     public String voltagem;
