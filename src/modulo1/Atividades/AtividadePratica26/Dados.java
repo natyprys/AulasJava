@@ -48,23 +48,45 @@ public class Dados {
     }
 
 
-    //Reorganizar
+    //Reorganizar Array
     public void reorganiza(int posicao) {
         for (int i = posicao; i < dados.length - 1; i++) {
             this.dados[i] = this.dados[i + 1];
         }
+        posicao --;
     }
 
 
-    //Se contem
-    public boolean contains(Object obj) {
-        for (int i = 0; i < posicaoAtual; i++) {
-            if (dados[i].equals(obj)) {
-                return true;
+    //Buscar
+    public int contains(Object obj) {
+        for (int i = 0; i < dados.length; i++) {
+            if (obj.equals(dados[i])) {
+                return i;
             }
+        }
+        return -1;
+    }
+
+
+    //Se existe
+    public boolean existe(Object obj){
+        int indice = contains(obj);
+        if(indice >=0){
+            return true;
         }
         return false;
     }
 
+    //verificarTamanhoArray
+    private void verificaTamanhoArray(){
+        if(posicaoAtual >= this.dados.length){
+            int novoTamanho = this.dados.length + 5;
+            Object[] dados2 = new Object[novoTamanho];
+            for (int i = 0; i < dados.length; i++) {
+                dados2[i] =  dados[i];
+            }
+            dados = dados2;
+        }
+    }
 
 }

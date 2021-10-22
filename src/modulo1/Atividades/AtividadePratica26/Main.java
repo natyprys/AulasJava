@@ -30,14 +30,15 @@ public class Main {
         System.out.println(pessoa1);
         System.out.println(pessoa2);
 
+        //Verificar tamanho
+        System.out.println(dados.size());
 
         //Verifique se o segundo objeto de pessoa já está salvo no array
-        //System.out.println(dados.contains(pessoa2));
+        //System.out.println(dados.existe(pessoa2));
 
         //Remova o aluno do array, utilizando o método da classe Dados.
         System.out.println(dados.remove(aluno1));
 
-        System.out.println(dados.size());
-
+        //System.out.println(dados.existe(aluno1));
     }
 }
