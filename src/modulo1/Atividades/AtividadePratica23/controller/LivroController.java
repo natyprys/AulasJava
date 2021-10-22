@@ -12,33 +12,33 @@ public class LivroController {
     //Os métodos precisam ser públicos para serem acessível de fora
     // create, read, update, delete
 
-    public void salvar (Livro l){
-        this.livros.add(l);
+    public void salvar (Livro livro){
+        this.livros.add(livro);
     }
 
     public  ArrayList<Livro> listar(){
-        return livros;
+        return this.livros;
     }
 
-    public void  alterar (Livro l){
+    public void  alterar (Livro livro){
         Livro livroauxiliar = null;
         // procurar livro
         for (Livro livro1 : listar()){
 
-            if (l.getId() == l.getId()){
-                livroauxiliar = l;
+            if (livro.getId() == livro.getId()){
+                livroauxiliar = livro;
             }
         }
 
         // se o livro foi achado, ele é substituido
         if (livroauxiliar != null){
             this.deletar(livroauxiliar);
-            this.salvar(l);
+            this.salvar(livro);
         }
     }
 
-    public void deletar (Livro l){
-        this.livros.remove(l);
+    public void deletar (Livro livro){
+        this.livros.remove(livro);
         //remover por objeto e não pela posição.
         //utiliza um equals, por isso preciso reescrever no livro oq seria esse equals, para estarem no mesmo campo de memória.
     }

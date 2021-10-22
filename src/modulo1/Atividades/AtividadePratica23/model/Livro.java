@@ -1,16 +1,17 @@
 package modulo1.Atividades.AtividadePratica23.model;
 
-public class Livro {
+import modulo1.Atividades.AtividadePratica29.Models.Produtos;
+
+public class Livro extends Base {
     private String nome;
     private String descricao;
     private int numPag;
-    private int id;
 
-    public Livro(int id){
-        this.id = id;
-    }
-    public int getId() {
-        return id;
+    public Livro(String nome, String descricao, int numPag, int Id) {
+       this.nome = nome;
+       this.descricao = descricao;
+       this.numPag = numPag;
+       this.Id = Id;
     }
 
 
@@ -46,15 +47,22 @@ public class Livro {
         Livro outro = (Livro)obj;
 
         //para comparar os Ids
-        if(this.id == outro.id){
+        if(this.Id == outro.Id){
             return true;
         }else{
             return false;
         }
-
     }
 
-
+    @Override
+    public String toString(){
+        return "\n---------------------- Livros ------------------------\n" +
+                "\tID: " + this.Id +
+                "\tNome: " + this.nome+
+                "\tNúmero de Páginas: " + this.numPag+
+                "\tDescrição: " + this.descricao+
+                "\n";
+    }
 
 }
 
