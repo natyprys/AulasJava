@@ -10,7 +10,6 @@ public class main {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
         ProdutosController produtosController = new ProdutosController();
 
         Produtos p1 = new Produtos();
