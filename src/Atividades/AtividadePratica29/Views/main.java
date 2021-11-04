@@ -1,7 +1,7 @@
-package modulo1.Atividades.AtividadePratica29.Views;
+package Atividades.AtividadePratica29.Views;
 
-import modulo1.Atividades.AtividadePratica29.Controller.ProdutosController;
-import modulo1.Atividades.AtividadePratica29.Models.Produtos;
+import Atividades.AtividadePratica29.Controller.ProdutosController;
+import Atividades.AtividadePratica29.Models.Produtos;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -93,4 +93,5 @@ public class main {
             System.out.print(produtos);
         }
     }
+
 }

@@ -1,7 +1,7 @@
-package modulo1.Atividades.AtividadePratica23.view;
+package Atividades.AtividadePratica23.view;
 
-import modulo1.Atividades.AtividadePratica23.controller.LivroController;
-import modulo1.Atividades.AtividadePratica23.model.Livro;
+import Atividades.AtividadePratica23.controller.LivroController;
+import Atividades.AtividadePratica23.model.Livro;
 
 import java.util.ArrayList;
 import java.util.Scanner;

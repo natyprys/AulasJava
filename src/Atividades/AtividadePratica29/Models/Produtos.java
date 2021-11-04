@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica29.Models;
+package Atividades.AtividadePratica29.Models;
 
 public class Produtos extends Base{
     public String nome;
