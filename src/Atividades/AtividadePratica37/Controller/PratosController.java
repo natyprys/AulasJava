@@ -1,6 +1,7 @@
-package MVC_pratos.Controller;
+package Atividades.AtividadePratica37.Controller;
 
-import MVC_pratos.Model.Pratos;
+
+import Atividades.AtividadePratica37.Model.Pratos;
 
 public class PratosController extends BaseController <Pratos>{
 }

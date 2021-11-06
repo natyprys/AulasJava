@@ -1,4 +1,4 @@
-package MVC_pratos.Controller;
+package Atividades.AtividadePratica37.Controller;
 
 import java.util.ArrayList;
 
@@ -9,7 +9,7 @@ public class BaseController <T> {
         this.dados = new ArrayList<T>();
     }
 
-    public  int numeroItens(){
+    public int numeroItens(){
         return dados.size();
     }
 

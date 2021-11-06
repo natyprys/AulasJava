@@ -1,4 +1,4 @@
-package MVC_pratos.Model;
+package Atividades.AtividadePratica37.Model;
 
 public abstract class Base {
     public int id;

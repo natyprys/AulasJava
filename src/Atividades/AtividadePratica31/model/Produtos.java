@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica31.model;
+package Atividades.AtividadePratica31.model;
 
 
 public class Produtos extends base {

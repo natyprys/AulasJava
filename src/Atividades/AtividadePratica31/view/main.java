@@ -1,7 +1,7 @@
-package modulo1.Atividades.AtividadePratica31.view;
+package Atividades.AtividadePratica31.view;
 
-import modulo1.Atividades.AtividadePratica31.controller.ProdutoController;
-import modulo1.Atividades.AtividadePratica31.model.Produtos;
+import Atividades.AtividadePratica31.controller.ProdutoController;
+import Atividades.AtividadePratica31.model.Produtos;
 
 import java.util.ArrayList;
 import java.util.Scanner;

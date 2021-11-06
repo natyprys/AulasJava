@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica31.model;
+package Atividades.AtividadePratica31.model;
 
 public class Categorias extends base{
     public String brinquedos;
