@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica30.Models;
+package AtividadePratica30.Models;
 
 public class Operacoes {
 

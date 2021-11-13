@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica25;
+package AtividadePratica25;
 
 public class Notebook extends Computador {
     public String bateria;

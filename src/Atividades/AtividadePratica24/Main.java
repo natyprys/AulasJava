@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica24;
+package AtividadePratica24;
 
 public class Main {
     public static void main(String[] args) {

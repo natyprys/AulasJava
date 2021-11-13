@@ -1,9 +1,9 @@
-package modulo1.Atividades.AtividadePratica27.Views;
+package AtividadePratica27.Views;
 
-import modulo1.Atividades.AtividadePratica27.Controller.FilmeController;
-import modulo1.Atividades.AtividadePratica27.Controller.SerieController;
-import modulo1.Atividades.AtividadePratica27.Models.Filmes;
-import modulo1.Atividades.AtividadePratica27.Models.Series;
+import AtividadePratica27.Controller.FilmeController;
+import AtividadePratica27.Controller.SerieController;
+import AtividadePratica27.Models.Filmes;
+import AtividadePratica27.Models.Series;
 
 
 public class main {

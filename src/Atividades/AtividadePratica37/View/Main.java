@@ -1,7 +1,7 @@
-package Atividades.AtividadePratica37.View;
+package AtividadePratica37.View;
 
-import Atividades.AtividadePratica37.Controller.PratosController;
-import Atividades.AtividadePratica37.Model.Pratos;
+import AtividadePratica37.Controller.PratosController;
+import AtividadePratica37.Model.Pratos;
 
 public class Main {
     public static void main(String[] args) {

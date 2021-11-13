@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica20;
+package AtividadePratica20;
 
 public class Funcionario extends Pessoa{
     private double salario;

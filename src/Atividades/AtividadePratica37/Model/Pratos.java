@@ -1,4 +1,4 @@
-package Atividades.AtividadePratica37.Model;
+package AtividadePratica37.Model;
 
 public class Pratos extends Base{
     public String nomeDoPrato;

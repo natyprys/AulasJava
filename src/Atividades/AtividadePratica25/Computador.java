@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica25;
+package AtividadePratica25;
 
 public class Computador {
     public String marca;

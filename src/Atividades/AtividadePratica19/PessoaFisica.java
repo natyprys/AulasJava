@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica19;
+package AtividadePratica19;
 
 public class PessoaFisica {
     private String codigo;

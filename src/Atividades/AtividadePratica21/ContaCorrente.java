@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica21;
+package AtividadePratica21;
 
 public class ContaCorrente extends Conta {
     private double taxaTransferencia = 2.50;

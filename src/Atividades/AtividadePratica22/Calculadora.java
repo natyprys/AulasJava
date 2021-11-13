@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica22;
+package AtividadePratica22;
 
 public class Calculadora {
     public int soma(int n1, int n2){

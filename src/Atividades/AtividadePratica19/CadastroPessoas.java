@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica19;
+package AtividadePratica19;
 
 public class CadastroPessoas {
     public static void main(String[] args) {

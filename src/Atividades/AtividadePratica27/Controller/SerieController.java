@@ -1,6 +1,6 @@
-package modulo1.Atividades.AtividadePratica27.Controller;
+package AtividadePratica27.Controller;
 
-import modulo1.Atividades.AtividadePratica27.Models.Series;
+import AtividadePratica27.Models.Series;
 
 public class SerieController extends BaseController<Series>{
 }

@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica27.Models;
+package AtividadePratica27.Models;
 
 import java.util.Objects;
 

@@ -1,6 +1,6 @@
-package modulo1.Atividades.AtividadePratica30.Controller;
+package AtividadePratica30.Controller;
 
-import modulo1.Atividades.AtividadePratica30.Models.Operacoes;
+import AtividadePratica30.Models.Operacoes;
 
 import java.util.Scanner;
 

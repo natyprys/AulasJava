@@ -1,6 +1,6 @@
-package Atividades.AtividadePratica29.Controller;
+package AtividadePratica29.Controller;
 
-import Atividades.AtividadePratica29.Models.Produtos;
+import AtividadePratica29.Models.Produtos;
 
 public class ProdutosController extends BaseController <Produtos>  {
 }

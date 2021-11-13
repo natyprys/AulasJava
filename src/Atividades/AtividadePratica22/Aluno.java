@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica22;
+package AtividadePratica22;
 
 public class Aluno{
     private String nomeCompleto;

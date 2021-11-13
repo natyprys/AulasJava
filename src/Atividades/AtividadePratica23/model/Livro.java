@@ -1,6 +1,6 @@
-package Atividades.AtividadePratica23.model;
+package AtividadePratica23.model;
 
-import Atividades.AtividadePratica29.Models.Produtos;
+import AtividadePratica29.Models.Produtos;
 
 public class Livro extends Base {
     private String nome;

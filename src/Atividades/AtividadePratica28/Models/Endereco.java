@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica28.Models;
+package AtividadePratica28.Models;
 
 public class Endereco {
     public String cep;

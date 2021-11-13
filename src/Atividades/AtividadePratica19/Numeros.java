@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica19;
+package AtividadePratica19;
 
 public class Numeros {
     public static void main(String[] args) {

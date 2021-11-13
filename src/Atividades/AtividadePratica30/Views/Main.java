@@ -1,6 +1,6 @@
-package modulo1.Atividades.AtividadePratica30.Views;
+package AtividadePratica30.Views;
 
-import modulo1.Atividades.AtividadePratica30.Controller.Calculadora;
+import AtividadePratica30.Controller.Calculadora;
 
 public class Main {
     public static void main(String[] args) {

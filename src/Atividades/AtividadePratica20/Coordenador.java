@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica20;
+package AtividadePratica20;
 
 public class Coordenador extends Funcionario {
     private String cursoCoordenado;

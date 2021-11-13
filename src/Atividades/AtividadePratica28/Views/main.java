@@ -1,9 +1,9 @@
-package modulo1.Atividades.AtividadePratica28.Views;
+package AtividadePratica28.Views;
 
-import modulo1.Atividades.AtividadePratica28.Controller.PessoaController;
-import modulo1.Atividades.AtividadePratica28.Controller.PessoaFisicaController;
-import modulo1.Atividades.AtividadePratica28.Models.Pessoa;
-import modulo1.Atividades.AtividadePratica28.Models.PessoaFísica;
+import AtividadePratica28.Controller.PessoaController;
+import AtividadePratica28.Controller.PessoaFisicaController;
+import AtividadePratica28.Models.Pessoa;
+import AtividadePratica28.Models.PessoaFísica;
 
 public class main {
     public static void main(String[] args) {

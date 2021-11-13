@@ -1,6 +1,6 @@
-package Atividades.AtividadePratica23.controller;
+package AtividadePratica23.controller;
 
-import Atividades.AtividadePratica23.model.Livro;
+import AtividadePratica23.model.Livro;
 
 import java.util.ArrayList;
 

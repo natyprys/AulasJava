@@ -1,6 +1,6 @@
-package Atividades.AtividadePratica31.controller;
+package AtividadePratica31.controller;
 
-import Atividades.AtividadePratica31.model.Categorias;
+import AtividadePratica31.model.Categorias;
 
 public class categoriaController extends baseController <Categorias> {
 }

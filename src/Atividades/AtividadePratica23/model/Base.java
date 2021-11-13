@@ -1,4 +1,4 @@
-package Atividades.AtividadePratica23.model;
+package AtividadePratica23.model;
 
 public abstract class Base {
     public int Id;

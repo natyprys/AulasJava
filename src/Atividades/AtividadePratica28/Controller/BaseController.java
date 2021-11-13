@@ -1,4 +1,4 @@
-package modulo1.Atividades.AtividadePratica28.Controller;
+package AtividadePratica28.Controller;
 
 import java.util.ArrayList;
 
