@@ -1,6 +1,7 @@
 package controller;
 
 import java.util.ArrayList;
+import dao.IDao;
 import model.BaseModel;
 
 public abstract class BaseController<T extends BaseModel> {
