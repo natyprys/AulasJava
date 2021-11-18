@@ -1,4 +1,4 @@
-package dao;
+package P1.dao;
 
 import java.util.ArrayList;
 

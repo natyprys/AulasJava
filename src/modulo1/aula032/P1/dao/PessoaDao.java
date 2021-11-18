@@ -1,11 +1,11 @@
-package dao;
+package P1.dao;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import model.Pessoa;
+import P1.model.Pessoa;
 
 public class PessoaDao extends BaseDao <Pessoa>{
     

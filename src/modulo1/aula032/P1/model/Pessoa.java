@@ -1,4 +1,4 @@
-package model;
+package P1.model;
 
 public class Pessoa extends BaseModel{
     public String nome;

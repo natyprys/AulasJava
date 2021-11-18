@@ -3,7 +3,7 @@
 // e se converte o tipo que o dado esta para um objeto da classe.
 // conversao de tipos
 
-package dao;
+package P1.dao;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import model.BaseModel;
+import P1.model.BaseModel;
 
 
 public abstract class BaseDao<T extends BaseModel> implements IDao<T> {

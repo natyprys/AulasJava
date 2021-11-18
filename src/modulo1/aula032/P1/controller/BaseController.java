@@ -1,8 +1,9 @@
-package controller;
+package P1.controller;
 
 import java.util.ArrayList;
-import dao.IDao;
-import model.BaseModel;
+
+import P1.dao.IDao;
+import P1.model.BaseModel;
 
 public abstract class BaseController<T extends BaseModel> {
     private ArrayList<T> list;

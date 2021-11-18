@@ -1,7 +1,7 @@
-package view;
+package P1.view;
 
-import controller.PessoaController;
-import model.Pessoa;
+import P1.controller.PessoaController;
+import P1.model.Pessoa;
 
 public class PessoaView {
     public static void main(String[] args) {
