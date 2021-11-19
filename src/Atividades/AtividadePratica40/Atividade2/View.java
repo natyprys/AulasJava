@@ -11,6 +11,5 @@ public class View {
     IController ic = new Controller();
     //ic.salvar(pt);
 
-
 } 
 }
