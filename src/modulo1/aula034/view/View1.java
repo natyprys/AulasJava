@@ -12,15 +12,12 @@ public class View1 {
             Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "123456");
             
             Statement statement = conn.createStatement();
-            String sql = "INSERT INTO estado (nome,sigla, pais_id) values ('Rio de Janeiro' , 'RJ', 1)";
-            // Aspas simples no values
+            String sql = "INSERT INTO categoria (nome,descricao) values ('banheiro', 'categorias da casa')";
 
             statement.execute(sql, Statement.RETURN_GENERATED_KEYS);            
-            //para armazenar as keys q foram geradas
             ResultSet ids = statement.getGeneratedKeys();
 
             while(ids.next()){
-                // comeca em 1(nao em 0)
                 int id = ids.getInt(1);
                 System.out.println(id);
             }
