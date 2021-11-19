@@ -11,11 +11,6 @@ public class Controller implements IController {
     // Ctrl + . no controller
 
     public String salvar(String dado) {
-        PontosTuristicos pt = new PontosTuristicos();
-        pt.nome = "Igrejinha";
-        pt.descrição = " Igreja Nossa Senhora de Fátima ";
-        pt.localização= " Asa Sul ";
-
 
         try {
             FileWriter fw = new FileWriter("Atividade2/PontosTuristicos.txt", true);
