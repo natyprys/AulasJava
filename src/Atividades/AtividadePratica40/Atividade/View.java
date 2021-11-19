@@ -39,9 +39,9 @@ public class View {
                 String linha = sc.nextLine();
                 String[] empresaString = linha.split(";");
                 Empresas empresas = new Empresas();
-                empresas.nome = empresaString[1];
-                empresas.cnpj = empresaString[2];
-                empresas.ramoAtividade = empresaString[3];
+                empresas.nome = empresaString[0];
+                empresas.cnpj = empresaString[1];
+                empresas.ramoAtividade = empresaString[2];
     
 
                 System.out.printf("%s - %s - %s \n", empresas.nome ,empresas.cnpj, empresas.ramoAtividade);
