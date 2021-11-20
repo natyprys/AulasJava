@@ -8,21 +8,21 @@ import java.sql.SQLException;
 
 public class Delete {
     public static void main(String[] args) {
-        try {
+        try (Connection conn = new ConnectionFactory().getConnection()){
         int id = 2;
-
-        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "123456");
-        
         String sql = "DELETE FROM categoria WHERE id_categoria = 1" ; 
-        PreparedStatement prepStatement = conn.prepareStatement(sql);
-           
+        
+            try (PreparedStatement prepStatement = conn.prepareStatement(sql)){
+                prepStatement.setInt(1, id);   
+                prepStatement.execute( );   
+                
+                int linhasAfetadas = prepStatement.getUpdateCount();
+                System.out.println(linhasAfetadas);         
+            }catch(Exception e) {
+                e.printStackTrace();
+            }        
 
-        prepStatement.execute();   
-        int linhasAfetadas = prepStatement.getUpdateCount();
-        System.out.println(linhasAfetadas);         
-        prepStatement.setInt(1, id);    
-
-            conn.close();
+          
         } catch (SQLException e) {
             e.printStackTrace();
         }

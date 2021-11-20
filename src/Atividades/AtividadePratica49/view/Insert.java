@@ -7,18 +7,19 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
+import org.postgresql.core.v3.ConnectionFactoryImpl;
+
 public class Insert {
     public static void main(String[] args) {
-        try {
+        try (Connection conn = new ConnectionFactory().getConnection()){
 
             String nome = "corredor";
             String descricao = "categorias casa";
 
-            Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "123456");
-            PreparedStatement prepStatement = conn.prepareStatement("INSERT INTO categoria (nome, descricao) values (?, ?)", Statement.RETURN_GENERATED_KEYS);
+            String sql ="INSERT INTO categoria (nome, descricao) values (?, ?)";
+            PreparedStatement prepStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             prepStatement.setString(1, nome);
             prepStatement.setString(2,descricao);
-
 
             prepStatement.execute();            
             ResultSet ids = prepStatement.getGeneratedKeys();
@@ -28,7 +29,8 @@ public class Insert {
                 System.out.println(id);
             }
 
-            conn.close();
+            //conn.close(); - não precisa mais
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }

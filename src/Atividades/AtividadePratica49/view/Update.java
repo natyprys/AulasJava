@@ -10,11 +10,10 @@ public class Update {
     public static void main(String[] args) {
         
     
-    try {
+    try(Connection conn = new ConnectionFactory().getConnection()) {
+
         String nome = "copaa";
         int id = 7;
-
-        Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "123456");
         
         String sql = "UPDATE categoria SET nome=? WHERE id_categoria = ?";         
         PreparedStatement prepStatement = conn.prepareStatement(sql);
@@ -26,7 +25,6 @@ public class Update {
         int linhasAfetadas = prepStatement.getUpdateCount();
         System.out.println(linhasAfetadas);
 
-        conn.close();
     } catch (SQLException e) {
         e.printStackTrace();
     }
