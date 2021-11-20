@@ -1,4 +1,4 @@
-package Atividades.AtividadePratica38.view;
+package AtividadePratica38.view;
 
 import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
