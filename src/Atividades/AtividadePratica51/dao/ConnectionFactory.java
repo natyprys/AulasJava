@@ -7,7 +7,6 @@ import com.mchange.v2.c3p0.ComboPooledDataSource;
 
 
 public class ConnectionFactory {
-    //Altere o método que retorna a conexão para retornar uma conexão vinda de um DataSource;
     private DataSource dataSource;
 
     public ConnectionFactory(){
@@ -18,7 +17,6 @@ public class ConnectionFactory {
         pool.setPassword("123456");
         this.dataSource = pool;
 
-        //Altere a fábrica de conexões para utilizarem um pool de conexões com um limite de 50 conexões.
         pool.setMaxPoolSize(50);
     }
 

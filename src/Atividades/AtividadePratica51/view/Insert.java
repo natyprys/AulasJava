@@ -1,35 +1,22 @@
 package view;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
+import dao.CategoriaDao;
 import dao.ConnectionFactory;
+import model.Categoria;
 
 
 public class Insert {
     public static void main(String[] args) {
         try (Connection conn = new ConnectionFactory().getConnection()){
+            CategoriaDao dao = new CategoriaDao(conn);
+            Categoria cat1 = new Categoria("Test1Dao");
+            Categoria cat2 = new Categoria("Test2Dao");
 
-            String nome = "corredor";
-            String descricao = "categorias casa";
-
-            String sql ="INSERT INTO categoria (nome, descricao) values (?, ?)";
-            PreparedStatement prepStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-            prepStatement.setString(1, nome);
-            prepStatement.setString(2,descricao);
-
-            prepStatement.execute();            
-            ResultSet ids = prepStatement.getGeneratedKeys();
-
-            while(ids.next()){
-                int id = ids.getInt(1);
-                System.out.println(id);
-            }
-
-            //conn.close(); - não precisa mais
+            dao.create(cat1);
+            dao.create(cat2);
             
         } catch (SQLException e) {
             e.printStackTrace();
