@@ -13,7 +13,7 @@ public class Update {
     
     try(Connection conn = new ConnectionFactory().getConnection()) {
         CategoriaDao dao = new CategoriaDao(conn);     
-        Categoria model = new Categoria(12, " casaa ", " adfaa ");
+        Categoria model = new Categoria(20, " quarto ", " adfaa ");
         System.out.println(dao.update(model));
 
 

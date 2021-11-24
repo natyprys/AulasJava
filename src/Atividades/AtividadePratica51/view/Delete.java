@@ -11,7 +11,7 @@ public class Delete {
     public static void main(String[] args) {
         try (Connection conn = new ConnectionFactory().getConnection()){
             CategoriaDao dao = new CategoriaDao(conn);      
-            dao.delete(9);
+            dao.delete(20);
                             
           
         } catch (SQLException e) {

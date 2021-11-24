@@ -20,10 +20,12 @@ public class CategoriaDao {
     //CRUD  
 
     public void create(Categoria model) throws SQLException{               
-        String sql = "INSERT INTO categoria(nome)values(?)";
+        String sql = "INSERT INTO categoria(nome, descricao) values(?, ?)";
         PreparedStatement prepStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);          
             
         prepStatement.setString(1, model.getNome());
+        prepStatement.setString(2, model.getDescricao());
+
         prepStatement.execute();            
         ResultSet ids = prepStatement.getGeneratedKeys();
 
