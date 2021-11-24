@@ -20,11 +20,13 @@ public class CategoriaDao {
     //CRUD
 
     public void create(Categoria model) throws SQLException{               
-        String sql = "INSERT INTO categoria(nome)values(?)";
+        String sql = "INSERT INTO categoria (nome,descricao) values(?,?)";
         PreparedStatement prepStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);          
             
         prepStatement.setString(1, model.getNome());
-        prepStatement.execute();            
+        prepStatement.setString(2, model.getDescricao());
+        prepStatement.execute();       
+
         ResultSet ids = prepStatement.getGeneratedKeys();
 
         while(ids.next()){
@@ -32,6 +34,7 @@ public class CategoriaDao {
                 System.out.println(id);
             }             
     }
+
 
     public ArrayList<Categoria> list() throws SQLException{
         ArrayList<Categoria> list = new  ArrayList<Categoria>();
@@ -44,6 +47,7 @@ public class CategoriaDao {
                 Categoria cat = new Categoria( result.getInt("id_categoria"), result.getString("nome"),result.getString("descricao"));
                 list.add(cat);
             }
+            
         return list;
     }
 

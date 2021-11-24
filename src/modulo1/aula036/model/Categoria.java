@@ -1,25 +1,26 @@
 package model;
 
+
 public class Categoria{
-    private int id;
+    private int id_categoria;
     private String nome;
     private String descricao;
 
     public Categoria(String nome) {
         this.nome = nome;
     }
-    public Categoria(int id, String nome, String descricao) {
-        this.id = id;
+    public Categoria(int id_categoria, String nome,String descricao) {
+        this.id_categoria = id_categoria;
         this.nome = nome;
         this.descricao = descricao;
     }
 
-    //set e get
+
     public void setId(int id) {
-        this.id = id;
+        this.id_categoria = id;
     }
     public int getId() {
-        return id;
+        return id_categoria;
     }
 
     public void setNome(String nome) {
@@ -32,16 +33,13 @@ public class Categoria{
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
-
     public String getDescricao() {
         return descricao;
     }
 
-
-
     @Override
     public String toString() {
-        String retorno = String.format("%d - %s - %s", this.id, this.nome, this.descricao);
+        String retorno = String.format("%d - %s -  %s", this.id_categoria, this.nome, this.descricao);
         return retorno;
     }
 }

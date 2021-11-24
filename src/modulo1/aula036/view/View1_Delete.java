@@ -10,7 +10,7 @@ public class View1_Delete{
     public static void main(String[] args) {
         try(Connection conn = new ConnectionFactory().getConnection()){        
             CategoriaDao dao = new CategoriaDao(conn);      
-            dao.delete(13);
+            dao.delete(19);
                             
         } catch (SQLException e) {
             e.printStackTrace();
