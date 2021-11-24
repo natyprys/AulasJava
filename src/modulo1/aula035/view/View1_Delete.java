@@ -17,14 +17,15 @@ public class View1_Delete{
 
         try(Connection conn = new ConnectionFactory().getConnection()) 
         {            
-            int idDeletado = 27;            
-            String sql = "DELETE FROM categoria WHERE id = ?";
+            int idDeletado = 16;            
+            String sql = "DELETE FROM categoria WHERE id_categoria = ?";
 
             try ( PreparedStatement prepStatement = conn.prepareStatement(sql)) {
                 prepStatement.setInt(1, idDeletado);
                 prepStatement.execute();   
                 int linhasAfetadas = prepStatement.getUpdateCount();
-                System.out.println(linhasAfetadas);    
+                System.out.println(linhasAfetadas);   
+                 
             } catch (Exception e) {
                 e.printStackTrace();
             }            

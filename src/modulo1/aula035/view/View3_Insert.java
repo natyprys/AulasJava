@@ -11,19 +11,22 @@ import utils.ConnectionFactory;
 public class View3_Insert {
     public static void main(String[] args) {
         try(Connection conn = new ConnectionFactory().getConnection()) {
-            String nome = "TestePrepared";
+            String nome = "kadlkaf";
+            String descricao = "khkdsks";
             
-            String sql = "INSERT INTO categoria(nome)values(?)";
+            String sql = "INSERT INTO categoria (nome,descricao) values(? , ?)";
             PreparedStatement prepStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             prepStatement.setString(1, nome);
+            prepStatement.setString(2, descricao);
 
             prepStatement.execute();            
             ResultSet ids = prepStatement.getGeneratedKeys();
 
             while(ids.next()){
-                int id = ids.getInt("id");
+                int id = ids.getInt("id_categoria");
                 System.out.println(id);
             }
+
         } catch (SQLException e) {
             e.printStackTrace();
         }

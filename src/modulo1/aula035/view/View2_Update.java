@@ -10,9 +10,9 @@ public class View2_Update {
         try(Connection conn = new ConnectionFactory().getConnection()) {
 
             String nome = "UpdatePrepStatement";
-            int id = 25;            
+            int id = 16;            
             
-            String sql = "UPDATE categoria SET nome=? WHERE id = ?";            
+            String sql = "UPDATE categoria SET nome=? WHERE id_categoria = ?";            
             PreparedStatement prepStatement = conn.prepareStatement(sql);
             prepStatement.setString(1, nome);
             prepStatement.setInt(2, id);
@@ -21,6 +21,8 @@ public class View2_Update {
                       
             int linhasAfetadas = prepStatement.getUpdateCount();
             System.out.println(linhasAfetadas);
+
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }

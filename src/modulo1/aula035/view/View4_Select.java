@@ -15,10 +15,12 @@ public class View4_Select {
             prepStatement.execute();
             ResultSet result = prepStatement.getResultSet();
             while(result.next()){
-                int id = result.getInt("id");
+                int id = result.getInt("id_categoria");
                 String nome = result.getString("nome");
-                System.out.printf("%d - %s\n", id, nome);
+                String descricao = result.getString("descricao");
+                System.out.printf("%d - %s - %s\n", id, nome, descricao);
             }
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
