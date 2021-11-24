@@ -2,7 +2,8 @@ package com.natyprys.vendas;
 
 import javax.swing.JFrame;
 
-import com.natyprys.vendas.model.CategoriaView;
+
+import com.natyprys.vendas.view.CategoriaView;
 
 public class App {
     public static void main( String[] args ){
