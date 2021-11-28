@@ -1,0 +1,4 @@
+com\natyprys\vendas\models\Categoria.class
+com\natyprys\vendas\servlets\CategoriaServlet.class
+com\natyprys\vendas\servlets\ProdutoServlet.class
+com\natyprys\vendas\models\Produto.class
