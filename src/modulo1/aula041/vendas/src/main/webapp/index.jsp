@@ -7,14 +7,8 @@
 	
 	</head>
 	<body>
-		<h1> Tabela Categoria </h1> 
-		<h2>Htmls</h2>
-			<a href="/vendas-1/categoria.html">Categoria</a>
-			<a href="/vendas-1/produto.html">Produto</a>
-		
-		<h2>Servlets</h2>
-			<a href="/vendas-1/categoria">Categoria</a>
-			<a href="/vendas-1/produto">Produto</a>				
-
+		<h1> Sistema de vendas </h1> 
+		<a href="/vendas-1/categoria.jsp">Categoria</a>
+		<a href="/vendas-1/produto.jsp">Produto</a>
 	</body>
 </html>
