@@ -14,10 +14,7 @@
 		
 		<h2>Servlets</h2>
 			<a href="/vendas-1/categoria">Categoria</a>
-			<a href="/vendas-1/produto">Produto</a>
-			
-		
-	
+			<a href="/vendas-1/produto">Produto</a>				
 
 	</body>
 </html>
