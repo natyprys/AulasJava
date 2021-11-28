@@ -23,7 +23,7 @@ public class Produto extends HttpServlet {
             if (parametroValor != null && parametroIDcategoria != null){
                 float valor = Float.parseFloat(parametroValor); 
                 int id_categoria = Integer.parseInt(parametroIDcategoria); 
-                out.printf("Modulo Produto = Produto = %s - %f - %f ", nome, valor, id_categoria);
+                out.printf("Modulo Produto = Produto = %s - %f - %d ", nome, valor, id_categoria);
             }
             else{
                 out.printf("Modulo Produto = Produto = %s ", nome);
