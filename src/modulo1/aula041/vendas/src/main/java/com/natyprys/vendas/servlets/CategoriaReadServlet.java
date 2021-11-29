@@ -17,14 +17,14 @@ import jakarta.servlet.http.HttpServletResponse;
 public class CategoriaReadServlet extends HttpServlet {
 
     //doGet pq vou listar
-    
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         PrintWriter out = resp.getWriter();
         CategoriaDao dao =  new CategoriaDao();
         for (Categoria model : dao.read()) {
-            out.printf("%d - %s \n", model.getId(), model.getNome());
+            out.printf("%d - %s - %s \n", model.getId(), model.getNome(), model.getDescricao());
         }
     }
 }
