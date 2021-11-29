@@ -11,27 +11,28 @@ import com.natyprys.vendas.model.Categoria;
 
 public class CategoriaDao {
 
-public int insert(Categoria model) {
-	int idGerado = 0;
-
+	public void insert(Categoria model) {
+	
 	try (Connection conn = new ConnectionFactory().getConnection()) {
 
-		String sql = "INSERT INTO categoria(nome)values(?)";
+		String sql = "INSERT INTO categoria(nome, descricao) values(?, ?)";
 		PreparedStatement prepStatement = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 		prepStatement.setString(1, model.getNome());
+		prepStatement.setString(2, model.getDescricao());
 
 		prepStatement.execute();
 		ResultSet ids = prepStatement.getGeneratedKeys();
 
-		while (ids.next()) {
-			idGerado = ids.getInt("id");
-		}
+			while(ids.next()){
+                int id = ids.getInt("id_ categoria");
+                System.out.println(id);
+			}
 
 	} catch (SQLException e) {
 		e.printStackTrace();
-	}
-		return idGerado;
-	}
+		}
+
+}
 
 public ArrayList<Categoria> read() {
 	ArrayList<Categoria> list = new ArrayList<Categoria>();
@@ -43,8 +44,9 @@ public ArrayList<Categoria> read() {
 		ResultSet result = prepStatement.getResultSet();
 			while (result.next()) {
 				Categoria model = new Categoria();
-				model.setId(result.getInt("id"));
+				model.setId(result.getInt("id_categoria"));
 				model.setNome(result.getString("nome"));
+				model.setDescricao(result.getString("descricao"));
 				list.add(model);
 			}
 	} catch (SQLException e) {
@@ -57,7 +59,7 @@ public int update(Categoria model) {
 	int linhasAfetadas = 0;
 	try (Connection conn = new ConnectionFactory().getConnection()) {
 
-		String sql = "UPDATE categoria SET nome=? WHERE id = ?";
+		String sql = "UPDATE categoria SET nome=? WHERE id_categoria = ?";
 		PreparedStatement prepStatement = conn.prepareStatement(sql);
 		prepStatement.setString(1, model.getNome());
 		prepStatement.setInt(2, model.getId());
@@ -74,7 +76,7 @@ public int update(Categoria model) {
 public int delete(Categoria model) {
 	int linhasAfetadas = 0;
 	try (Connection conn = new ConnectionFactory().getConnection()) {
-		String sql = "DELETE FROM categoria WHERE id = ?";
+		String sql = "DELETE FROM categoria WHERE id_categoria = ?";
 
 		try (PreparedStatement prepStatement = conn.prepareStatement(sql)) {
 			prepStatement.setInt(1, model.getId());
