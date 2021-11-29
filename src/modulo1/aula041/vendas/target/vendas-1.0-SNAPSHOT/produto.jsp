@@ -10,7 +10,7 @@
     <h1>Cadastro de produto</h1>
 	<!-- Fazendo um formulario-->
 
-    <form action="/vendas-1/produto" >
+    <form action="/vendas-1/produto" method="post" >
         nome: <input type="text" name="nome" id="nome"> <br />
         valor: <input type="number" name="valor" id="valor" min="0.00" max="10000.00" step="0.01"><br />
        <!--  usar valor min e max para o float e não dar erro-->
