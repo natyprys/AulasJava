@@ -10,14 +10,25 @@ public class ConnectionFactory {
 
     public ConnectionFactory(){
         ComboPooledDataSource pool = new ComboPooledDataSource();
-
-        pool.setJdbcUrl("jdbc:postgresql://localhost:5432/postgres");
-        pool.setUser("postgres");
-        pool.setPassword("123456");
         this.dataSource = pool;
-
-        pool.setMaxPoolSize(50);
     }
+
+        //setando o drive para conexão com o banco de forma manual
+        //  pool.setDriverClass("org.postgres.Driver");
+
+        //try {
+          //  pool.setDriverClass("org.postgresql.Driver");
+        //} catch (PropertyVetoException e) {
+
+          //  e.printStackTrace();
+        //}
+
+        //pool.setJdbcUrl("jdbc:postgresql://localhost:5432/postgres");
+        //pool.setUser("postgres");
+        //pool.setPassword("123456");
+        
+        // - essas informações foram colocadas no resources
+
 
     public Connection getConnection() throws SQLException{
         return this.dataSource.getConnection();

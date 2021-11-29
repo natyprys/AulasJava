@@ -25,7 +25,7 @@ public class CategoriaServlet extends HttpServlet{
         model.setId(dao.insert(model));
 
         PrintWriter out = resp.getWriter();
-        out.printf("Categoria Salva com sucesso- Id gerado %d", model.getId());
+        out.printf("Categoria Salva com sucesso XML- Id gerado %d", model.getId());
     }
 
    
