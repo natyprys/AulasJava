@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Cadastro de Categoria</h1>
-    <form action="/vendas-1/categoria">
+    <form action="/vendas-1/categoria" method="post">
 		<!-- o name deve ser igual ao parametro do servlet-->
         nome: <input type="text" name="nome" id="nome"><br />
         descricao: <input type="text" name="descricao" id="descricao"><br />

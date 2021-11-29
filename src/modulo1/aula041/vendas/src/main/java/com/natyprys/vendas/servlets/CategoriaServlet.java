@@ -14,7 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet(urlPatterns = "/categoria")
 public class CategoriaServlet extends HttpServlet{
     @Override
-    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Categoria cat1 = new Categoria();
         
         cat1.setNome(req.getParameter("nome"));
@@ -23,4 +23,10 @@ public class CategoriaServlet extends HttpServlet{
         PrintWriter out = resp.getWriter();
         out.printf("Modulo Categoria = categoria = %s - %s", cat1.getNome(), cat1.getDescricao());
     }
+
+   
+
+//  @Override protected void service - aceita get e post  
+//  @Override protected void doPost -só aceita quando usamos method="post" no jsp
+
 }
