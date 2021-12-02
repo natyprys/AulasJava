@@ -36,7 +36,31 @@ public int insert(Categoria model){
  	}
  		return idGerado;
  }    
-    
+  
+ //para o alterar
+ public Categoria readById(int id) {
+    Categoria model = new Categoria();
+    try(Connection conn = new ConnectionFactory().getConnection()) {
+        PreparedStatement prepStatement = conn.prepareStatement("SELECT * FROM categoria WHERE id = ?");
+        prepStatement.setInt(1, id);
+        prepStatement.execute();
+        ResultSet result = prepStatement.getResultSet(); 
+
+        //enquanto tiver proximo
+        while(result.next()){
+            model.setId(result.getInt("id_categoria"));
+            model.setNome(result.getString("nome"));
+            model.setDescricao(result.getString("descricao"));
+            break;
+        }            
+
+    } catch (SQLException e) {
+        e.printStackTrace();
+    } 
+    return model;
+}
+
+
  // seleciona por nome
 public ArrayList<Categoria> read(String nome){
     ArrayList<Categoria> list = new  ArrayList<Categoria>();
