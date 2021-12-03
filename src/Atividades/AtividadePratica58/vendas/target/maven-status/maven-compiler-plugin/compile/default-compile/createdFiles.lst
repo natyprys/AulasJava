@@ -1,0 +1,10 @@
+com\natyprys\vendas\servlets\CategoriaDeletarServlet.class
+com\natyprys\vendas\servlets\CategoriaReadServlet.class
+com\natyprys\vendas\dao\CategoriaDao.class
+com\natyprys\vendas\models\Categoria.class
+com\natyprys\vendas\servlets\CategoriaServlet.class
+com\natyprys\vendas\models\Produto.class
+com\natyprys\vendas\servlets\CategoriaBuscarIdServlet.class
+com\natyprys\vendas\dao\ConnectionFactory.class
+com\natyprys\vendas\servlets\CategoriaAlterarServlet.class
+com\natyprys\vendas\servlets\ProdutoServlet.class
