@@ -1,11 +1,9 @@
 package com.natyprys;
 
-
-
 import com.natyprys.dao.CategoriaDao;
 import com.natyprys.model.Categoria;
 
-public class App{
+public class AppCategoria{
     public static void main( String[] args ){
         CategoriaDao dao = new CategoriaDao();
 

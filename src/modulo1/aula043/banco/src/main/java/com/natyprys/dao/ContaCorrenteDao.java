@@ -4,16 +4,16 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 
-import com.natyprys.model.Categoria;
+import com.natyprys.model.ContaCorrente;
 
-public class CategoriaDao {
+public class ContaCorrenteDao {
     private EntityManager entityManager;
 
-    public CategoriaDao(){
-        this.entityManager  =  new ConnectionFactory().getConnection();
+    public ContaCorrenteDao(){
+        this.entityManager  = new ConnectionFactory().getConnection();
     }
 
-    public int create(Categoria model){
+    public int create(ContaCorrente model){
         //com persist
         this.entityManager.getTransaction().begin();
         this.entityManager.persist(model);
@@ -22,14 +22,14 @@ public class CategoriaDao {
     };
     
 
-public List<Categoria> read(){
+public List<ContaCorrente> read(){
     return this.entityManager
-    .createQuery("SELECT c FROM Categoria c", Categoria.class)
+    .createQuery("SELECT cc FROM Categoria cc", ContaCorrente.class)
     .getResultList();
 }
 
 
-public void update(Categoria model){
+public void update(ContaCorrente model){
     //com o merge
     this.entityManager.getTransaction().begin();
     this.entityManager.merge(model);        
@@ -38,7 +38,7 @@ public void update(Categoria model){
 
 
 public void delete(int id){
-    Categoria model = this.entityManager.find(Categoria.class, id);
+    ContaCorrente model = this.entityManager.find(ContaCorrente.class, id);
     if(model != null){
         this.entityManager.getTransaction().begin();
         this.entityManager.remove(model);        
