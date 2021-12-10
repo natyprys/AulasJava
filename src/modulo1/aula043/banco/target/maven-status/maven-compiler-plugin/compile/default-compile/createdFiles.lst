@@ -1,0 +1,7 @@
+com\natyprys\AppCategoria.class
+com\natyprys\dao\CategoriaDao.class
+com\natyprys\dao\ConnectionFactory.class
+com\natyprys\model\Categoria.class
+com\natyprys\model\ContaCorrente.class
+com\natyprys\AppConta.class
+com\natyprys\dao\ContaCorrenteDao.class
