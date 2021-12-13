@@ -1,10 +1,10 @@
-package com.natyprys.brad;
+package com.natyprys.banco;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BradApplicationTests {
+class BancoApplicationTests {
 
 	@Test
 	void contextLoads() {

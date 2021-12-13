@@ -18,7 +18,6 @@ import java.io.*;
 import java.nio.channels.*;
 import java.util.Properties;
 
-
 public class MavenWrapperDownloader {
 
     private static final String WRAPPER_VERSION = "0.5.6";
@@ -95,7 +94,6 @@ public class MavenWrapperDownloader {
         }
     }
 
-  
     private static void downloadFileFromURL(String urlString, File destination) throws Exception {
         if (System.getenv("MVNW_USERNAME") != null && System.getenv("MVNW_PASSWORD") != null) {
             String username = System.getenv("MVNW_USERNAME");
