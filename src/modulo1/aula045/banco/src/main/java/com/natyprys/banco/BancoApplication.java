@@ -37,13 +37,13 @@ public class BancoApplication implements CommandLineRunner {
 
 		repository.save(model);
 
-		// List<Filme> lista = (List<Filme>)repository.findAll();
+		List<Filme> lista = (List<Filme>)repository.findAll();
 
-		// System.out.println("\n");
-		// for (Filme f : lista) {
-		// 	System.out.printf("%d - %s\n", f.getId(), f.getNome());
-		// }
-		// System.out.println("\n");
+		System.out.println("\n");
+		for (Filme f : lista) {
+		 	System.out.printf("%d - %s\n", f.getId(), f.getNome());
+		 }
+		 System.out.println("\n");
 
 		//repository.deleteById(1);
 		
